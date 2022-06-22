@@ -23,6 +23,7 @@ export function Time({ onHandleCountdown }: TimeProps) {
           <Button
             title="Iniciar contagem"
             onClick={() => onHandleCountdown(date)}
+            disabled={date === ""}
           />
         </div>
       </div>
